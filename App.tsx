@@ -26,7 +26,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import { NumberToWords } from './src/Logic/NumberToWords';
+import { MultiplicationTable } from './src/Logic/MultiplicationTable';
 
 const Section: React.FC<
   PropsWithChildren<{
@@ -34,8 +34,8 @@ const Section: React.FC<
   }>
 > = ({children, title}) => {
   const isDarkMode = useColorScheme() === 'dark';
-  const convert = new NumberToWords();
-  console.log(convert.toWords(828))
+  const convert = new MultiplicationTable();
+  console.log(convert.generateTable(828))
   return (
     <View style={styles.sectionContainer}>
       <Text

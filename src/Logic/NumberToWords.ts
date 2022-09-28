@@ -1,7 +1,7 @@
 export class NumberToWords {
-    toWords = (value:any) => {
+    toWords = (value:any):string => {
         if (value<=1000) {
-            var dg = [
+            const dg = [
               'cero',
               'uno',
               'dos',
@@ -13,7 +13,7 @@ export class NumberToWords {
               'ocho',
               'nueve',
             ];
-            var tn = [
+            const tn = [
               'diez',
               'once',
               'doce',
@@ -25,7 +25,7 @@ export class NumberToWords {
               'dieciocho',
               'diecinueve',
             ];
-            var tw = [
+            const tw = [
               'veinte',
               'treinta',
               'cuarenta',
@@ -35,17 +35,17 @@ export class NumberToWords {
               'ochenta',
               'noventa',
             ];
-            var th = ['', 'mil'];
+            const th = ['', 'mil'];
       
             value = value.toString();
             value = value.replace(/[\, ]/g, '');
             if (value != parseFloat(value)) return 'Eso no es un numero';
-            var x = value.indexOf('.');
+            let x = value.indexOf('.');
             if (x == -1) x = value.length;
-            var n = value.split('');
-            var str = '';
-            var sk = 0;
-            for (var i = 0; i < x; i++) {
+            const n = value.split('');
+            let str = '';
+            let sk = 0;
+            for (let i = 0; i < x; i++) {
               if ((x - i) % 3 == 2) {
                 if (n[i] == '1') {
                   str += tn[Number(n[i + 1])] + ' ';
@@ -91,9 +91,9 @@ export class NumberToWords {
             }
 
             if (x != value.length) {
-              var y = value.length;
+              const y = value.length;
               str += 'punto ';
-              for (var i: number = x + 1; i < y; i++) str += dg[n[i]] + ' ';
+              for (let i: number = x + 1; i < y; i++) str += dg[n[i]] + ' ';
             }
             return str.replace(/\value+/g, ' ');
         }
