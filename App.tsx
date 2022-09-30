@@ -10,16 +10,9 @@
 
 import React from 'react';
 import {
-  SafeAreaView,
   StyleSheet,
-  Text,
   useColorScheme,
-  View,
 } from 'react-native';
-
-import {
-  Colors,
-} from 'react-native/Libraries/NewAppScreen';
 
 import { NavigationContainer,DefaultTheme,DarkTheme } from '@react-navigation/native';
 import { NavigationDrawer } from './src/Components/navigation/NavigationDrawer';
@@ -31,7 +24,7 @@ const App = () => {
     ...DefaultTheme,
     colors:{
       ...DefaultTheme.colors,
-      primary: 'rgb(247,210,45)'
+      primary: 'rgb(13,193,149)'
     }
   }
 
@@ -39,7 +32,7 @@ const App = () => {
     ...DarkTheme,
     colors:{
       ...DarkTheme.colors,
-      primary: 'rgb(247,210,45)',
+      primary: 'rgb(14,253,107)',
       border:'rgb(189,157,120)'
     }
   }
@@ -50,24 +43,5 @@ const App = () => {
     </NavigationContainer>
   );
 };
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
 
 export default App;
