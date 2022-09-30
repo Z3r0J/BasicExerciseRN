@@ -1,72 +1,96 @@
-import { StyleSheet } from 'react-native'
+import {StyleSheet} from 'react-native';
 
-export const receiveTheme = (isDarkMode:boolean)=>{
-    return StyleSheet.create({
-        inputStyle:{
-          color:isDarkMode?"white":"#5A5D5C",
-          borderColor:isDarkMode?'#0ECB9D':'#0DC195',
-          borderStyle:"solid",
-          borderWidth:1,
-          borderTopWidth:0,
-          borderLeftWidth:0,
-          borderRightWidth:0,
-          borderRadius:6,
-          fontSize:18,
-          
-        },
-        textStyle:{
-          margin:"2%",
-          fontSize:14,
-          fontWeight:"700",
-          color:isDarkMode?"white":"#6D7170",
-          fontFamily:'Poppins-Regular',
-        },
-        buttonStyle:{
-          marginTop:"6%",
-          backgroundColor:isDarkMode?'#0ECB9D':'#0DC195',
-          borderWidth:1,
-          borderStyle:'solid',
-          borderColor:isDarkMode?'#0ECB9D':'#0DC195',
-          borderRadius:9,
-          alignItems:'center',
-          display:'flex',
-          justifyContent:'center'
-        },
-        buttonTextStyle:{
-            margin:"2%",
-            fontSize:22,
-            fontWeight:"700",
-            color:'white',
-        },
-        textResultStyle:{
-          fontSize:18,
-          fontWeight:'bold',
-          padding: '5%',
-          marginTop:'2%',
-          color:isDarkMode?"white":"#5A5D5C"
-        },
-        menuViewStyle:{
-          display:'flex',
-          backgroundColor:isDarkMode?'#292929':'#F1F1F1',
-          justifyContent:'space-between',
-          flexDirection:'row'
-        },
-        menuTextStyle:{
-          color:isDarkMode?"white":"black",
-          fontSize:22,
-          padding:12,
-          paddingBottom:2,
-          fontFamily:'Poppins-Regular',
-          textTransform:'capitalize',
-          fontWeight:'600'
-        },
-        menuMiniTextStyle:{
-          color:isDarkMode?"white":"black",
-          fontSize:14,
-          padding:12,
-          fontFamily:'Poppins-Regular',
-          textTransform:'capitalize',
-          fontWeight:'600'
-        }
-      });
-}
+export const receiveTheme = (isDarkMode: boolean) => {
+  return StyleSheet.create({
+    inputStyle: {
+      color: isDarkMode ? 'white' : '#5A5D5C',
+      borderColor: isDarkMode ? '#0ECB9D' : '#0DC195',
+      borderStyle: 'solid',
+      borderWidth: 1,
+      borderTopWidth: 0,
+      borderLeftWidth: 0,
+      borderRightWidth: 0,
+      borderRadius: 6,
+      fontSize: 18,
+      fontFamily: 'Poppins-Regular',
+    },
+    textStyle: {
+      margin: '2%',
+      fontSize: 14,
+      fontWeight: '700',
+      color: isDarkMode ? 'white' : '#6D7170',
+      fontFamily: 'Poppins-Regular',
+    },
+    buttonStyle: {
+      marginTop: '6%',
+      backgroundColor: isDarkMode ? '#0ECB9D' : '#0DC195',
+      borderWidth: 1,
+      borderStyle: 'solid',
+      borderColor: isDarkMode ? '#0ECB9D' : '#0DC195',
+      borderRadius: 9,
+      alignItems: 'center',
+      display: 'flex',
+      justifyContent: 'center',
+    },
+    buttonTextStyle: {
+      margin: '2%',
+      fontSize: 22,
+      fontWeight: '700',
+      color: 'white',
+      fontFamily: 'Poppins-Regular',
+    },
+    textResultStyle: {
+      fontSize: 18,
+      fontWeight: 'bold',
+      padding: '5%',
+      marginTop: '2%',
+      color: isDarkMode ? 'white' : '#5A5D5C',
+    },
+    menuViewStyle: {
+      display: 'flex',
+      backgroundColor: isDarkMode ? '#292929' : '#F1F1F1',
+      justifyContent: 'space-between',
+      flexDirection: 'row',
+    },
+    menuTextStyle: {
+      color: isDarkMode ? 'white' : 'black',
+      fontSize: 22,
+      padding: 12,
+      paddingBottom: 2,
+      fontFamily: 'Poppins-Regular',
+      textTransform: 'capitalize',
+      fontWeight: '600',
+    },
+    menuMiniTextStyle: {
+      color: isDarkMode ? 'white' : 'black',
+      fontSize: 14,
+      padding: 12,
+      fontFamily: 'Poppins-Regular',
+      textTransform: 'capitalize',
+      fontWeight: '600',
+    },
+    listStyle: {
+      marginTop: 20,
+      flexDirection: 'column',
+    },
+    item: {
+      fontFamily: 'Poppins-Regular',
+      fontSize: 16,
+      marginTop: 8,
+      borderBottomWidth: 1,
+      borderStyle: 'solid',
+      borderColor: isDarkMode ? '#0ECB9D' : '#0DC195',
+      color: isDarkMode ? 'white' : '#5A5D5C',
+    },
+    itemLetter: {
+      fontFamily: 'Poppins-Regular',
+      fontSize: 16,
+      marginTop: 8,
+      borderBottomWidth: 1,
+      borderStyle: 'solid',
+      borderColor: isDarkMode ? '#0ECB9D' : '#0DC195',
+      color: isDarkMode ? 'white' : '#5A5D5C',
+      textTransform:'capitalize'
+    },
+  });
+};

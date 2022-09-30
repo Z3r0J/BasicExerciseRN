@@ -38,7 +38,7 @@ export const SumComponent = () => {
           <Text style={receiveTheme(isDarkMode).buttonTextStyle}><Icon name='md-add' size={24}/>Sumar</Text>
         </TouchableOpacity>
 
-        {result.length>0?<Text style={receiveTheme(isDarkMode).textResultStyle}>{result}</Text>:""}
+        {result.length>0?<View style={receiveTheme(isDarkMode).listStyle}><Text style={receiveTheme(isDarkMode).item}>{result}</Text></View>:""}
     </View>
   )
 }

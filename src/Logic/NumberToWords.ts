@@ -80,7 +80,11 @@ export class NumberToWords {
                     }
                     str += 'iento '
                     if(n[i+2]>0&&n[i+1]<=0){str+=dg[n[i+2]]}
-                };
+                }
+                else if(n.length<=1){
+                  str+=dg[n[i]];
+                }
+            
                 sk = 1;
               }
 
